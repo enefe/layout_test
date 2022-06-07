@@ -113,7 +113,6 @@
     }
     .header__download-button {
         width: 300px;
-        /* height: 55px; */
         border: 3px solid #FFFFFF;
         border-radius: 29px;
         font-weight: 700;
@@ -229,6 +228,78 @@
     /* EFFECT 320px */
     .effect {
         display: none;
+    }
+    /* COMMENTS 320px */
+    .comments {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .comments__container {
+        margin: 0 auto 0;
+        /* width: calc(100% - 40px); */
+        display: inline-flex;
+        overflow: hidden;
+        transform: translateX(0);
+        transition: transform 0.3s ease;
+        cursor: grab;
+    }
+    .comment {
+        width: calc(100vw - 40px);
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        user-select: none;
+    }
+    .comment__author {
+        margin: 0 0 31px 0;
+        padding: 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    .comment__message {
+        margin: 0 0 44px 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #283645;
+    }
+    .navigation {
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .nav {
+        width: 6px;
+        height: 6px;
+        background: #283645;
+        border-radius: 100%;
+        opacity: 0.3;
+        margin-right: 19px;
+    }
+    .nav:last-child {
+        margin: 0;
+    }
+    .nav__active {
+        background: #FFFFFF;
+        opacity: 1;
+        padding: 3px;
+        border: 3px solid #283645;
+        transition: 2s ease;
+    }
+    .grabbing {
+        cursor: grabbing;
     }
     /* FOOTER 320px */
     .footer {
@@ -597,7 +668,7 @@
         margin-left: 114px;
         font-size: 21px;
         transition: 0.3s ease;
-        cursor: pointer !important;
+        cursor: pointer;
     }
     .header__download-button:hover {
         opacity: 0.7;
