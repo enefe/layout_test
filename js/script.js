@@ -13,12 +13,18 @@ $('.header__open-menu').click(function() {
 });
 
 // Смена логотипов в зависимости от разрешения экрана пользователя
-let logo = document.querySelector('.header__logo');
+let logoHeader = document.querySelector('.header__logo');
 
 if (window.innerWidth >= 600) {
-    logo.setAttribute('src', 'images/logo-pink-tablet.png');
+    logoHeader.setAttribute('src', 'images/logo-pink-tablet.png');
 }
 
 if (window.innerWidth >= 1200) {
-    logo.setAttribute('src', 'images/logo-pink-desktop.png');
+    logoHeader.setAttribute('src', 'images/logo-pink-desktop.png');
+}
+
+let logoFooter = document.querySelector('.footer__logo');
+
+if (window.innerWidth >= 1200) {
+    logoFooter.setAttribute('src', 'images/logotype blue desktop.png');
 }

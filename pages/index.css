@@ -19,6 +19,7 @@
     }
     .header__top {
         background: #283645;
+        z-index: 1;
     }
     .header__container {
         border-bottom: 1px solid #000000;
@@ -69,7 +70,7 @@
         background-position: center top;
         height: 436px;
         margin-top: -40px;
-        z-index: -1;
+        z-index: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -111,14 +112,15 @@
         align-items: center;
     }
     .header__download-button {
-        width: 280px;
+        width: 300px;
         height: 55px;
         border: 3px solid #FFFFFF;
         border-radius: 29px;
         font-weight: 700;
         font-size: 18px;
         line-height: 18px;
-        padding: 14px 48px;
+        padding: 14px 52px;
+        text-align: center;
         margin: 28px auto 0;
         text-decoration: none;
         color: #FFFFFF;
@@ -365,8 +367,8 @@
     }
     .header__download-button {
         margin-top: 50px;
-        width: 300px;
-        height: 55px;
+        width: 310px;
+        height: 20px;
         margin-left: 15px;
     }
     .header__icons {
@@ -556,6 +558,10 @@
         font-size: 18px;
         line-height: 18px;
         color: #FFFFFF;
+        transition: 0.3s ease;
+    }
+    .header__item_link:hover {
+        transform: scale(1.05);
     }
     .header__bottom {
         background-position: center center;
@@ -590,6 +596,11 @@
     .header__download-button {
         margin-left: 114px;
         font-size: 21px;
+        transition: 0.3s ease;
+        cursor: pointer !important;
+    }
+    .header__download-button:hover {
+        opacity: 0.7;
     }
     .header__icons {
         margin: 95px auto 50px;
@@ -693,8 +704,14 @@
     .effect__link {
         font-size: 18px;
         line-height: 30px;
+        transition: 0.3s ease;
     }
-    /* FOOTER 600px */
+    .effect__link:hover {
+        /* transform: scale(1.05); */
+        text-decoration: none;
+        opacity: 0.6;
+    }
+    /* FOOTER 1200px */
     .footer__main-title {
         width: 462px;
         margin: 74px auto 60px;
@@ -722,6 +739,10 @@
     }
     .footer__link {
         margin-bottom: 0;
+        transition: opacity ease 0.3s;
+    }
+    .footer__link:hover {
+        opacity: 0.6;
     }
     .footer__map {
         height: 502px;
@@ -736,6 +757,9 @@
     }
     .footer__social {
         margin-right: 11px;
+    }
+    .footer__social:hover {
+        transform: scale(1.05);
     }
     .footer__dev {
         font-size: 18px;
