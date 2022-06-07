@@ -113,13 +113,13 @@
     }
     .header__download-button {
         width: 300px;
-        height: 55px;
+        /* height: 55px; */
         border: 3px solid #FFFFFF;
         border-radius: 29px;
         font-weight: 700;
         font-size: 18px;
         line-height: 18px;
-        padding: 14px 52px;
+        padding: 18px 52px;
         text-align: center;
         margin: 28px auto 0;
         text-decoration: none;
