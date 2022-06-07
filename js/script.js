@@ -12,7 +12,7 @@ $('.header__open-menu').click(function() {
     })
 });
 
-
+// Смена логотипов в зависимости от разрешения экрана пользователя
 let logo = document.querySelector('.header__logo');
 
 if (window.innerWidth >= 600) {
