@@ -240,9 +240,11 @@
         margin: 0 auto 0;
         /* width: calc(100% - 40px); */
         display: inline-flex;
+        scrollbar-width: none;
+        will-change: transform;
         overflow: hidden;
         transform: translateX(0);
-        transition: transform 0.3s ease;
+        transition: transform 0.1s ease;
         cursor: grab;
     }
     .comment {
@@ -296,7 +298,7 @@
         opacity: 1;
         padding: 3px;
         border: 3px solid #283645;
-        transition: 2s ease;
+        transition: 0.1s ease;
     }
     .grabbing {
         cursor: grabbing;

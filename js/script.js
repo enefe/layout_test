@@ -48,7 +48,7 @@ slides.forEach((slide, index) => {
     slide.addEventListener('touchstart', touchStart(index));
     slide.addEventListener('touchend', touchEnd);
     slide.addEventListener('touchmove', touchMove);
-
+    slide.addEventListener('touchmove', function(event) { event.preventDefault(); }, false);
     //касания мыши:
     slide.addEventListener('mousedown', touchStart(index));
     slide.addEventListener('mouseup', touchEnd);
