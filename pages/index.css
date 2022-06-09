@@ -328,7 +328,6 @@
         overflow: hidden;
         transform: translateX(0);
         transition: transform 0.1s ease;
-        cursor: grab;
     }
     .table__column {
         position: relative;
@@ -1069,21 +1068,14 @@
     }
     .table__program_title {
         margin: 17px 0 0px 0;
-        padding: 0;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 18px;
     }
     .table__program_hit {
         width: auto;
         height: auto;
     }
     .table__program_price {
-        margin: 0;
-        padding: 0;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 24px;
     }
     .table__item {
         height: 59px;
